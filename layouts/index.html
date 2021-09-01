@@ -22,6 +22,7 @@
   {{- partial "sections/v1/about.html" . -}}
   {{- partial "sections/v1/do_things.html" . -}}
   {{- partial "sections/v1/projects.html" . -}}
+  {{- partial "sections/v1/support.html" . -}}
   {{- partial "sections/v1/contact.html" . -}}
 
   {{- partial "sections/v1/footer.html" . -}}
@@ -107,6 +108,11 @@
     {{- partial "sections/v3/projects.html" . -}}
     {{ end }}
 
+    {{ if .Site.Params.disable_support }}
+    {{ else }}
+    {{- partial "sections/v3/support.html" . -}}
+    {{ end }}
+
     {{ if .Site.Params.disable_achievements }}
     {{ else }}
     {{- partial "sections/v3/achievements.html" . -}}
@@ -142,6 +148,7 @@
       $(".fa-sun").toggleClass("d-none");
       $(".about-backdark").toggleClass("about-back");
       $(".content-pro-backdark").toggleClass("content-pro-back");
+      $(".support-backdark").toggleClass("support-back");
       $(".education-backdark").toggleClass("education-back");
       $(".achievements-backdark").toggleClass("achievements-back");
       $("nav").toggleClass("navbar-dark");
@@ -171,6 +178,7 @@
         .removeClass("text-muted");
       $(".about-backdark").toggleClass("about-back");
       $(".content-pro-backdark").toggleClass("content-pro-back");
+      $(".support-backdark").toggleClass("support-back");
       $(".education-backdark").toggleClass("education-back");
       $(".achievements-backdark").toggleClass("achievements-back");
     }

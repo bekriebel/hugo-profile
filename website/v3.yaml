@@ -109,6 +109,14 @@ params:
       featuredlink: "/"
       description: "Description of project"
 
+  # Support
+  disable_support: false
+  support:
+    title: "Support My Work"
+    description: "If you like my work, please consider supporting."
+    patreon: "https://www.patreon.com/"
+    kofi: "https://ko-fi.com/"
+
   # Achievements
   disable_achievements: false
   achievements:

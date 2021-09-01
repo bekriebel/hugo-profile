@@ -205,6 +205,15 @@ a:hover {
   }
 }
 
+/* v3 support */
+.support-back {
+  background-color: #eaedf0;
+}
+
+.support-button {
+  border-radius: 0.5rem;
+}
+
 /* v3 experience */
 #experience {
 }

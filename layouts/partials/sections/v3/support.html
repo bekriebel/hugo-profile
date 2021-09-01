@@ -1,0 +1,27 @@
+<section id="support" class="support-backdark support-back">
+  <div class="container-fluid py-5">
+    <div class="text-right text-center h3">
+      {{ .Site.Params.support.title }}
+    </div>
+    <div class="row justify-content-center px-md-5">
+      <div class="col-md-6 py-3">
+        <div class="text-center">{{ .Site.Params.support.description }}</div>
+        <div class="text-center pt-3">
+          {{ if .Site.Params.support.patreon }}
+          <a href="{{ .Site.Params.support.patreon }}"
+            ><img
+              class="support-button"
+              src="https://img.shields.io/badge/support-patreon-FF424D.svg?logo=patreon&style=for-the-badge"
+          /></a>
+          {{ end }} {{ if .Site.Params.support.kofi }}
+          <a href="{{ .Site.Params.support.kofi }}"
+            ><img
+              class="support-button"
+              src="https://img.shields.io/badge/donate-ko--fi-29ABE0.svg?logo=ko-fi&style=for-the-badge"
+          /></a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
