@@ -141,8 +141,8 @@ a:hover {
 .bg-pro {
   padding: 0 !important;
   opacity: 0.9;
-}
-.bg-pro img {
+  background-size: cover;
+  background-position: center center;
   height: 250px;
   width: 100%;
   border-radius: 0.5rem !important;
@@ -151,9 +151,14 @@ a:hover {
 }
 .content-pro {
   height: 250px;
-  background-color: #e5e4e2 !important;
   border-top-right-radius: 0.5rem !important;
   border-bottom-right-radius: 0.5rem !important;
+}
+.content-pro-backdark {
+  background-color: #3a3b3c !important;
+}
+.content-pro-back {
+  background-color: #e5e4e2 !important;
 }
 .content-pro-top {
   color: #3a3b3c !important;
@@ -170,13 +175,11 @@ a:hover {
   .bg-pro {
     opacity: 0.3;
     position: relative;
+    border-radius: 0.5rem !important;
   }
   .pro {
     margin-left: 10% !important;
     margin-right: 10% !important;
-  }
-  .bg-pro img {
-    border-radius: 0.5rem !important;
   }
   .content-pro {
     background-color: transparent !important;
