@@ -1,3 +1,8 @@
 <!-- javascripts -->
 <script src="/js/jquery.slim.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+
+<!--  Custom javascript  -->
+{{ range .Site.Params.custom_js -}}
+    <script type="text/javascript" src="{{ . | relURL }}"></script>
+{{- end }}

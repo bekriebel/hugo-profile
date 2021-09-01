@@ -66,6 +66,11 @@
 
   <!-- aos -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom stylesheets -->
+  {{ range .Site.Params.custom_css -}}
+    <link rel="stylesheet" href="{{ . | relURL }}" />
+  {{- end }}
 </head>
 
 <body class="text-dark">
