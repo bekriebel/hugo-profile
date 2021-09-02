@@ -69,6 +69,8 @@
           <a class="nav-link text-dark" href="{{.Url}}" aria-label="{{ .name }}">{{ .name }}</a>
         </li>
         {{ end }}
+        {{ if .Site.Params.disable_darkmode }}
+        {{ else }}
         <li class="nav-item navbar-text">
           <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="customSwitch1" autocomplete="on">
@@ -78,6 +80,7 @@
             </label>
           </div>
         </li>
+        {{ end }}
       </ul>
     </div>
   </nav>

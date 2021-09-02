@@ -24,6 +24,7 @@ params:
   description: "A high performance hugo theme for personal portfolio and blog."
 
   # Navbar Menus
+  disable_darkmode: false
   customMenus:
     - name: "Blog"
       Url: "/blog"
