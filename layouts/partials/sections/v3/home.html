@@ -34,6 +34,13 @@
           <span class="px-1"></span>
           {{ end }}
 
+          {{ if .Site.Params.mastodon }}
+          <a href="{{ .Site.Params.mastodon }}" rel="me" class="social-icon">
+            <i class="fab fa-lg fa-mastodon"></i>
+          </a>
+          <span class="px-1"></span>
+          {{ end }}
+
           {{ if .Site.Params.linkedin }}
           <a href="{{ .Site.Params.linkedin }}" class="social-icon">
             <i class="fab fa-lg fa-linkedin"></i>
